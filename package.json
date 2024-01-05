@@ -1,17 +1,17 @@
 {
-  "name": "textlint-rule-ng-word",
+  "name": "textlint-rule-ng-word-pattern",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KeitaMoromizato/textlint-rule-ng-word.git"
+    "url": "https://github.com/yo1000/textlint-rule-ng-word-pattern.git"
   },
   "version": "1.0.0",
-  "description": "textlint rule that check NG words",
-  "main": "lib/ng-word.js",
+  "description": "textlint rule that check NG words and patterns",
+  "main": "lib/ng-word-pattern.js",
   "scripts": {
-    "build": "babel src --out-dir lib --source-maps",
-    "watch": "babel src --out-dir lib --watch --source-maps",
+    "build": "textlint-scripts build",
+    "watch": "textlint-scripts build --watch",
     "prepublish": "npm run --if-present build",
-    "test": "mocha"
+    "test": "textlint-scripts test"
   },
   "files": [
     "lib",
@@ -21,16 +21,13 @@
     "textlint"
   ],
   "bugs": {
-    "url": "https://github.com/KeitaMoromizato/textlint-rule-ng-word/issues"
+    "url": "https://github.com/yo1000/textlint-rule-ng-word-pattern/issues"
   },
-  "author": "Keita Moromizato",
-  "email": "keita_moromizato@relationsgroup.co.jp",
+  "author": "YO!CHI KIKUCHI",
+  "email": "i@yo1000.com",
   "license": "MIT",
   "devDependencies": {
-    "babel": "^5.8.34",
-    "espower-babel": "^3.3.0",
-    "mocha": "^2.3.4",
-    "power-assert": "^1.2.0",
-    "textlint": "^5.0.3"
+    "textlint-scripts": "^13.4.1"
   }
 }
+

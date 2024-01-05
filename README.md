@@ -1,36 +1,65 @@
-# textlint-rule-ng-word
+textlint-rule-ng-word-pattern
+========================================
+
+Forked from https://github.com/KeitaMoromizato/textlint-rule-ng-word.git
+
 [textlint](https://github.com/textlint/textlint) rule that check NG word.
 
-## Installation
+
+Installation
+----------------------------------------
 
 ```
-npm install textlint-rule-ng-word
+npm install textlint-rule-ng-word-pattern
 ```
 
 ## Usage
 
-```
-npm install -g textlint textlint-rule-ng-word
-textlint --rule ng-word README.md
-```
+Via .textlintrc
 
-## Config
-
-```
+```json
 {
-  "rules": {
-    "ng-word": {
-      "words": ["word1", "word2"]
+    "rules": {
+        "ng-word-pattern": {
+            "words": ["NG", "No Good"]
+        }
     }
-  }
 }
 ```
 
-## Tests
+```json
+{
+    "rules": {
+        "ng-word-pattern": {
+            "patterns": [{
+                "pattern": "NG",
+                "flags": "i"
+            }, {
+                "pattern": "No ?Good",
+                "flags": "i"
+            }]
+        }
+    }
+}
+```
+
+Via CLI
+
+```
+textlint --rule ng-word-pattern README.md
+```
+
+
+Tests
+----------------------------------------
 
 ```
 npm test
 ```
 
-## License
+
+License
+----------------------------------------
+
 MIT
+
