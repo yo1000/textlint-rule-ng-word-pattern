@@ -3,7 +3,7 @@ textlint-rule-ng-word-pattern
 
 Forked from https://github.com/KeitaMoromizato/textlint-rule-ng-word.git
 
-[textlint](https://github.com/textlint/textlint) rule that check NG word.
+[textlint](https://github.com/textlint/textlint) rule that check NG word with RegExp support.
 
 
 Installation
