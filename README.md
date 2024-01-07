@@ -35,7 +35,7 @@ Via .textlintrc
                 "pattern": "NG",
                 "flags": "i"
             }, {
-                "pattern": "No ?Good",
+                "pattern": "No[\\s]*Good",
                 "flags": "i"
             }]
         }
